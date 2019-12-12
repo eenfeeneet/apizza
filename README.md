@@ -25,14 +25,15 @@ npm run client
 
 ## Deployment
 
-There is a Heroku post build script so that you do not have to compile your React frontend manually, it is done on the server. Simply push to Heroku and it will build and load the client index.html page
+This app is deployed on Heroku -
+[aPizzaStore](https://apizzastore.herokuapp.com/)
 
 ## App Info
 
 ### Author
 
-Eenfeeneet
-[Mhafiz](http://mhafiz.tech)
+Mhafiz -
+[Eenfeeneet](http://mhafiz.tech)
 
 ### Version
 
@@ -41,3 +42,17 @@ Eenfeeneet
 ### License
 
 This project is licensed under the MIT License
+
+### Technologies
+
+[React](https://facebook.github.io/react/) - View Library
+
+[Redux](http://redux.js.org/) - State Manager
+
+[NodeJs](https://nodejs.org/) - JavaScript runtime
+
+[Express](http://expressjs.com/) - Node Application Framework
+
+[MongoDB](https://www.mongodb.com/) - Document Database
+
+[Mongoose](http://mongoosejs.com/) - MongoDB Framework
