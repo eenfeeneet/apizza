@@ -1,34 +1,34 @@
 import {
-  GET_ITEMS,
-  ADD_ITEM,
-  DELETE_ITEM,
-  ITEMS_LOADING
+  GET_ORDERS,
+  ADD_ORDER,
+  DELETE_ORDER,
+  ORDERS_LOADING
 } from '../actions/types';
 
 const initialState = {
-  items: [],
+  orders: [],
   loading: false
 };
 
 export default function(state = initialState, action) {
   switch (action.type) {
-    case GET_ITEMS:
+    case GET_ORDERS:
       return {
         ...state,
-        items: action.payload,
+        orders: action.payload,
         loading: false
       };
-    case DELETE_ITEM:
+    case DELETE_ORDER:
       return {
         ...state,
-        items: state.items.filter(item => item._id !== action.payload)
+        orders: state.orders.filter(order => order._id !== action.payload)
       };
-    case ADD_ITEM:
+    case ADD_ORDER:
       return {
         ...state,
-        items: [action.payload, ...state.items]
+        orders: [action.payload, ...state.orders]
       };
-    case ITEMS_LOADING:
+    case ORDERS_LOADING:
       return {
         ...state,
         loading: true

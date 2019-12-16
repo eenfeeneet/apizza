@@ -37,12 +37,13 @@ router.get("/specialty", (req, res) => {
 // @desc    Create A Pizza
 // @access  Private
 router.post("/", (req, res) => {
-    const { name, sauce, ingredients, type, description } = req.body;
+    const { name, sauce, ingredients, type, description, price } = req.body;
     const newPizza = new Pizza({
         name: name,
         sauce: sauce,
         ingredients: ingredients,
         type: type,
+        price: price,
         description: description
     });
 
